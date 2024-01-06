@@ -4,7 +4,7 @@ import photo2 from '../assets/blogs/photo2.jpg';
 import photo3 from '../assets/blogs/photo3.jpg';
 
 const Blogs = () => {
-  // Define state variables
+  
   const [blogData] = useState([
     {
       title: "Exploring the Power of React Hooks",
@@ -35,8 +35,8 @@ const Blogs = () => {
       {/* Container */}
       <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
         <div>
-          <p className='text-4xl font-bold inline border-b-4 border-pink-400 '>blogs</p>
-          <p className='py-4'>// These are the technologies I've worked with</p>
+          <p className='text-4xl font-bold inline border-b-4 border-pink-400 '>Blogs</p>
+          <p className='py-4'>// Welcome to our blog, where we share insights, ideas, and stories to inspire and inform</p>
         </div>
         {blogData.map((blog, index) => (
           <div key={index} className="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">

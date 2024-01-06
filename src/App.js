@@ -16,10 +16,11 @@ function App() {
       <About />
       <Skills />
       <Work />
-      <Contact />
+      
       <Testimonials />
       
       <Blogs />
+      <Contact />
     </div>
   );
 }

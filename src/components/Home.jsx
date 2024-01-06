@@ -2,15 +2,11 @@ import React from 'react';
 import { HiArrowNarrowRight } from 'react-icons/hi';
 import { Link } from 'react-scroll';
 import {
-  FaBars,
-  FaTimes,
   FaGithub,
   FaLinkedin,
-  FaFacebook,
-  FaLinkedinIn,
 } from 'react-icons/fa';
 import { HiOutlineMail } from 'react-icons/hi';
-import { BsFillPersonLinesFill } from 'react-icons/bs';
+
 
 
 const Home = () => {
@@ -21,17 +17,17 @@ const Home = () => {
   const mailtoLink = `mailto:${emailAddress}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 
   return (
-    <div name='home' className='w-full h-screen bg-[#1e1b4b]'>
-      {/* Container */}
+    <div name='home' className='w-full h-screen bg-[#711DB0]'>
+    
       <div className='max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full'>
         <p className='text-pink-400'>Hi, my name is</p>
         <h1 className='text-4xl sm:text-7xl font-bold text-[#ccd6f6]'>
           HAMZA MOHAMED
         </h1>
-        <h2 className='text-4xl sm:text-7xl font-bold text-[#8892b0]'>
+        <h2 className='text-4xl sm:text-7xl font-bold text-[#ccd6f6]'>
           I'm a Full Stack Developer.
         </h2>
-        <p className='text-[#8892b0] py-4 max-w-[700px]'>
+        <p className='text-[#ccd6f6] py-4 max-w-[700px]'>
         As a full-stack developer with a passion for crafting outstanding digital experiences, I specialize in creating and occasionally 
         designing exceptional web app
         lications. My current focus is on developing responsive and feature-rich full-stack solutions
@@ -47,11 +43,12 @@ const Home = () => {
           </button>
           </Link>
           <div >
-        <ul className='w-full h-[80px] flex bg-[#1e1b4b] text-gray-300'>
+        <ul className='w-full h-[80px] flex bg-[#711DB0] text-gray-300'>
           <li className='w-[60px] h-[60px] flex justify-between   duration-300 bg-blue-600'>
             <a
               className='flex justify-between items-center w-full text-gray-300'
               href='https://www.linkedin.com/in/mohamed-hamza-aa2ba92a5/'
+              target='_blank'
             >
                <FaLinkedin size={30} />
             </a>
@@ -59,7 +56,8 @@ const Home = () => {
           <li className='w-[60px] h-[60px] flex justify-between   duration-300 bg-[#333333]'>
             <a
               className='flex justify-between items-center w-full text-gray-300'
-              href='https://github.com/medhamza92'
+              href='https://github.com/medhamza92 '
+              target="_blank"
             >
                <FaGithub size={30} />
             </a>
@@ -72,14 +70,7 @@ const Home = () => {
                <HiOutlineMail size={30} />
             </a>
           </li>
-          <li className='w-[60px] h-[60px] flex justify-between  duration-300 bg-[#565f69]'>
-            <a
-              className='flex justify-between items-center w-full text-gray-300'
-              href='/'
-            >
-               <BsFillPersonLinesFill size={30} />
-            </a>
-          </li>
+          
         </ul>
       </div>
         </div>
